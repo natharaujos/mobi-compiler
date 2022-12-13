@@ -1,0 +1,14 @@
+INTEIRO FUNCAO fibonacci(n){
+    @erro
+    SE(n <= 1){
+        RETORNA n
+    }
+
+    RETORNA fibonacci(n-1) + fibonacci(n-2)
+}
+
+
+INTEIRO n
+LER n
+
+IMPRIMIR fibonacci(n)
