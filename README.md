@@ -9,7 +9,5 @@
     </br>
     Para a geração dos arquivos referentes a análise da gramática, foi utilizado o sistema operacional Kali Linux, onde foi utilizado o comando:
     </br>
-      <code>
-        "Antlr Grammar.g4"
-      </code>
+      <code> Antlr Grammar.g4 </code>
 </p>
