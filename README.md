@@ -10,7 +10,7 @@
     </br>
     Para a geração dos arquivos referentes a análise da gramática, foi utilizado o sistema operacional Kali Linux, onde foi utilizado o comando:
     </br>
-    ```
-    Antlr Grammar.g4
-    ```
+ ```
+ Antlr Grammar.g4
+ ```
 </p>
