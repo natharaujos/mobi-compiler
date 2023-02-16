@@ -1,5 +1,6 @@
-# TrabalhoPraticoGCC130
+# Documentação
 <p>
-  Trabalho prático com a finalidade de construir um compilador para a linguagem Mobi, criado pelos colaboradores do projeto: 
-  <a href="https://github.com/natharaujos">Nathan Araújo</a> e @brenocb00
+  Trabalho prático da Matéria de Compiladores (GCC130) com a finalidade de construir um compilador para a linguagem Mobi, criado pelos colaboradores do projeto: 
+  </br>
+  <a href="https://github.com/natharaujos">Nathan Araújo</a> e  <a href="https://github.com/brenocb00">Breno Barbosa</a>
  </p>
