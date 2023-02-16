@@ -7,7 +7,7 @@ import java.io.IOException;
 public class ExemploLexer {
 
     public static void  main (String[] args){
-        String filename = "D:\\ERE5\\novotrabcomp\\TrabalhoPraticoGCC130\\codigo.txt";
+        String filename = "D:\\ERE5\\comp\\trabcomp\\TrabCompiladores\\codigo.txt";
         try{
             CharStream input = CharStreams.fromFileName(filename);
             GrammarLexer lexer = new GrammarLexer(input);
