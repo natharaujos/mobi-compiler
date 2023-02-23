@@ -59,4 +59,3 @@ OP_LOG: '&'|'|';
 fragment LETRA: [a-zA-Z];
 fragment DIGITO: [0-9];
 WS: [ \r\t\n]* ->skip;
-
