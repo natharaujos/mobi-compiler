@@ -5,6 +5,8 @@ import org.antlr.v4.runtime.CharStreams ;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree ;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
+import antlr.GrammarParser;
+import antlr.GrammarLexer;
 
 
 import java.io.IOException;
@@ -13,7 +15,7 @@ public class ExemploLexer {
 
     public static void  main (String[] args){
         //parsing the input
-        GrammarParser parser = getParser("D:\\ERE5\\novotrabcomp\\TrabalhoPraticoGCC130\\codigo.txt");
+        GrammarParser parser = getParser("D:\\Projects\\TrabalhoPraticoGCC130\\codigo.txt");
 
         //obter arvore
         ParseTree ast = parser.programa();
@@ -21,7 +23,7 @@ public class ExemploLexer {
         System.out.println(ast.toStringTree());
 
         //Inicia o MyListener, nossa implementação do baseListener
-        GrammarBaseListener listener = new GrammarBaseListener();
+        Listener listener = new Listener();
 
         ParseTreeWalker walker = new ParseTreeWalker();
 
