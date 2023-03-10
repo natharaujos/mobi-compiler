@@ -16,12 +16,12 @@ declaracao_variavel: tipo ID;
 parametros: tipo ID*;
 tipo: INT | STR | REA;
 bloco_expressao: ID (ACO expressao FCO)? '=' expressao;
-expressao: expressao_igualdade ((OP_LOG'^' expressao_igualdade)*)?;
-expressao_igualdade: expressao_relacional ((OP_REL'^' expressao_relacional)*)?;
-expressao_relacional: expressao_soma ((OP_REL'^' expressao_soma)*)?;
-expressao_soma: expressao_multiplicacao ((OP_ARIT'^' expressao_multiplicacao)*)?;
-expressao_multiplicacao: expressao_unaria ((OP_ARIT'^' expressao_unaria)*)?;
-expressao_unaria: (OP_ARIT'^')* expressao_primaria;
+expressao: expressao_igualdade ((OP_LOG expressao_igualdade)*)?;
+expressao_igualdade: expressao_relacional ((OP_REL expressao_relacional)*)?;
+expressao_relacional: expressao_soma ((OP_REL expressao_soma)*)?;
+expressao_soma: expressao_multiplicacao ((OP_ARIT expressao_multiplicacao)*)?;
+expressao_multiplicacao: expressao_unaria ((OP_ARIT expressao_unaria)*)?;
+expressao_unaria: (OP_ARIT)* expressao_primaria;
 expressao_primaria: ID (ACO expressao FCO)?
                    | NUM
                    | APR expressao FPR
