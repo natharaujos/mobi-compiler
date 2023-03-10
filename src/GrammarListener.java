@@ -7,55 +7,65 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface GrammarListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#programa}.
+	 * Enter a parse tree produced by the {@code NInicio}
+	 * labeled alternative in {@link GrammarParser#programa}.
 	 * @param ctx the parse tree
 	 */
-	void enterPrograma(GrammarParser.ProgramaContext ctx);
+	void enterNInicio(GrammarParser.NInicioContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#programa}.
+	 * Exit a parse tree produced by the {@code NInicio}
+	 * labeled alternative in {@link GrammarParser#programa}.
 	 * @param ctx the parse tree
 	 */
-	void exitPrograma(GrammarParser.ProgramaContext ctx);
+	void exitNInicio(GrammarParser.NInicioContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#estrutura}.
+	 * Enter a parse tree produced by the {@code NEstrutura}
+	 * labeled alternative in {@link GrammarParser#estrutura}.
 	 * @param ctx the parse tree
 	 */
-	void enterEstrutura(GrammarParser.EstruturaContext ctx);
+	void enterNEstrutura(GrammarParser.NEstruturaContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#estrutura}.
+	 * Exit a parse tree produced by the {@code NEstrutura}
+	 * labeled alternative in {@link GrammarParser#estrutura}.
 	 * @param ctx the parse tree
 	 */
-	void exitEstrutura(GrammarParser.EstruturaContext ctx);
+	void exitNEstrutura(GrammarParser.NEstruturaContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#declaracao_funcao}.
+	 * Enter a parse tree produced by the {@code NDeclaracaoFuncao}
+	 * labeled alternative in {@link GrammarParser#declaracao_funcao}.
 	 * @param ctx the parse tree
 	 */
-	void enterDeclaracao_funcao(GrammarParser.Declaracao_funcaoContext ctx);
+	void enterNDeclaracaoFuncao(GrammarParser.NDeclaracaoFuncaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#declaracao_funcao}.
+	 * Exit a parse tree produced by the {@code NDeclaracaoFuncao}
+	 * labeled alternative in {@link GrammarParser#declaracao_funcao}.
 	 * @param ctx the parse tree
 	 */
-	void exitDeclaracao_funcao(GrammarParser.Declaracao_funcaoContext ctx);
+	void exitNDeclaracaoFuncao(GrammarParser.NDeclaracaoFuncaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#declaracao_variavel}.
+	 * Enter a parse tree produced by the {@code NDeclaracaoVariavel}
+	 * labeled alternative in {@link GrammarParser#declaracao_variavel}.
 	 * @param ctx the parse tree
 	 */
-	void enterDeclaracao_variavel(GrammarParser.Declaracao_variavelContext ctx);
+	void enterNDeclaracaoVariavel(GrammarParser.NDeclaracaoVariavelContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#declaracao_variavel}.
+	 * Exit a parse tree produced by the {@code NDeclaracaoVariavel}
+	 * labeled alternative in {@link GrammarParser#declaracao_variavel}.
 	 * @param ctx the parse tree
 	 */
-	void exitDeclaracao_variavel(GrammarParser.Declaracao_variavelContext ctx);
+	void exitNDeclaracaoVariavel(GrammarParser.NDeclaracaoVariavelContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#parametros}.
+	 * Enter a parse tree produced by the {@code NlocoDeclaracaoParametro}
+	 * labeled alternative in {@link GrammarParser#parametros}.
 	 * @param ctx the parse tree
 	 */
-	void enterParametros(GrammarParser.ParametrosContext ctx);
+	void enterNlocoDeclaracaoParametro(GrammarParser.NlocoDeclaracaoParametroContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#parametros}.
+	 * Exit a parse tree produced by the {@code NlocoDeclaracaoParametro}
+	 * labeled alternative in {@link GrammarParser#parametros}.
 	 * @param ctx the parse tree
 	 */
-	void exitParametros(GrammarParser.ParametrosContext ctx);
+	void exitNlocoDeclaracaoParametro(GrammarParser.NlocoDeclaracaoParametroContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link GrammarParser#tipo}.
 	 * @param ctx the parse tree
@@ -67,143 +77,171 @@ public interface GrammarListener extends ParseTreeListener {
 	 */
 	void exitTipo(GrammarParser.TipoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#bloco_expressao}.
+	 * Enter a parse tree produced by the {@code BlocoDeclaracaoExpressao}
+	 * labeled alternative in {@link GrammarParser#bloco_expressao}.
 	 * @param ctx the parse tree
 	 */
-	void enterBloco_expressao(GrammarParser.Bloco_expressaoContext ctx);
+	void enterBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#bloco_expressao}.
+	 * Exit a parse tree produced by the {@code BlocoDeclaracaoExpressao}
+	 * labeled alternative in {@link GrammarParser#bloco_expressao}.
 	 * @param ctx the parse tree
 	 */
-	void exitBloco_expressao(GrammarParser.Bloco_expressaoContext ctx);
+	void exitBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#expressao}.
+	 * Enter a parse tree produced by the {@code BlocoExpressao}
+	 * labeled alternative in {@link GrammarParser#expressao}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpressao(GrammarParser.ExpressaoContext ctx);
+	void enterBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#expressao}.
+	 * Exit a parse tree produced by the {@code BlocoExpressao}
+	 * labeled alternative in {@link GrammarParser#expressao}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpressao(GrammarParser.ExpressaoContext ctx);
+	void exitBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#expressao_igualdade}.
+	 * Enter a parse tree produced by the {@code BlocoExpressaoIgualdade}
+	 * labeled alternative in {@link GrammarParser#expressao_igualdade}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpressao_igualdade(GrammarParser.Expressao_igualdadeContext ctx);
+	void enterBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#expressao_igualdade}.
+	 * Exit a parse tree produced by the {@code BlocoExpressaoIgualdade}
+	 * labeled alternative in {@link GrammarParser#expressao_igualdade}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpressao_igualdade(GrammarParser.Expressao_igualdadeContext ctx);
+	void exitBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#expressao_relacional}.
+	 * Enter a parse tree produced by the {@code BlocoExpressaoRelacional}
+	 * labeled alternative in {@link GrammarParser#expressao_relacional}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpressao_relacional(GrammarParser.Expressao_relacionalContext ctx);
+	void enterBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#expressao_relacional}.
+	 * Exit a parse tree produced by the {@code BlocoExpressaoRelacional}
+	 * labeled alternative in {@link GrammarParser#expressao_relacional}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpressao_relacional(GrammarParser.Expressao_relacionalContext ctx);
+	void exitBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#expressao_soma}.
+	 * Enter a parse tree produced by the {@code BlocoExpressaoSoma}
+	 * labeled alternative in {@link GrammarParser#expressao_soma}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpressao_soma(GrammarParser.Expressao_somaContext ctx);
+	void enterBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#expressao_soma}.
+	 * Exit a parse tree produced by the {@code BlocoExpressaoSoma}
+	 * labeled alternative in {@link GrammarParser#expressao_soma}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpressao_soma(GrammarParser.Expressao_somaContext ctx);
+	void exitBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#expressao_multiplicacao}.
+	 * Enter a parse tree produced by the {@code BlocoExpressaoMultiplicacao}
+	 * labeled alternative in {@link GrammarParser#expressao_multiplicacao}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpressao_multiplicacao(GrammarParser.Expressao_multiplicacaoContext ctx);
+	void enterBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#expressao_multiplicacao}.
+	 * Exit a parse tree produced by the {@code BlocoExpressaoMultiplicacao}
+	 * labeled alternative in {@link GrammarParser#expressao_multiplicacao}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpressao_multiplicacao(GrammarParser.Expressao_multiplicacaoContext ctx);
+	void exitBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#expressao_unaria}.
+	 * Enter a parse tree produced by the {@code BlocoExpressaoUnaria}
+	 * labeled alternative in {@link GrammarParser#expressao_unaria}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpressao_unaria(GrammarParser.Expressao_unariaContext ctx);
+	void enterBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#expressao_unaria}.
+	 * Exit a parse tree produced by the {@code BlocoExpressaoUnaria}
+	 * labeled alternative in {@link GrammarParser#expressao_unaria}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpressao_unaria(GrammarParser.Expressao_unariaContext ctx);
+	void exitBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#expressao_primaria}.
+	 * Enter a parse tree produced by the {@code BlocoExpressaoPrimaria}
+	 * labeled alternative in {@link GrammarParser#expressao_primaria}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpressao_primaria(GrammarParser.Expressao_primariaContext ctx);
+	void enterBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#expressao_primaria}.
+	 * Exit a parse tree produced by the {@code BlocoExpressaoPrimaria}
+	 * labeled alternative in {@link GrammarParser#expressao_primaria}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpressao_primaria(GrammarParser.Expressao_primariaContext ctx);
+	void exitBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#print}.
+	 * Enter a parse tree produced by the {@code BlocoExpressaoImpressao}
+	 * labeled alternative in {@link GrammarParser#print}.
 	 * @param ctx the parse tree
 	 */
-	void enterPrint(GrammarParser.PrintContext ctx);
+	void enterBlocoExpressaoImpressao(GrammarParser.BlocoExpressaoImpressaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#print}.
+	 * Exit a parse tree produced by the {@code BlocoExpressaoImpressao}
+	 * labeled alternative in {@link GrammarParser#print}.
 	 * @param ctx the parse tree
 	 */
-	void exitPrint(GrammarParser.PrintContext ctx);
+	void exitBlocoExpressaoImpressao(GrammarParser.BlocoExpressaoImpressaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#bloco_retorno}.
+	 * Enter a parse tree produced by the {@code BlocoRetorno}
+	 * labeled alternative in {@link GrammarParser#bloco_retorno}.
 	 * @param ctx the parse tree
 	 */
-	void enterBloco_retorno(GrammarParser.Bloco_retornoContext ctx);
+	void enterBlocoRetorno(GrammarParser.BlocoRetornoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#bloco_retorno}.
+	 * Exit a parse tree produced by the {@code BlocoRetorno}
+	 * labeled alternative in {@link GrammarParser#bloco_retorno}.
 	 * @param ctx the parse tree
 	 */
-	void exitBloco_retorno(GrammarParser.Bloco_retornoContext ctx);
+	void exitBlocoRetorno(GrammarParser.BlocoRetornoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#leitura}.
+	 * Enter a parse tree produced by the {@code NLeitura}
+	 * labeled alternative in {@link GrammarParser#leitura}.
 	 * @param ctx the parse tree
 	 */
-	void enterLeitura(GrammarParser.LeituraContext ctx);
+	void enterNLeitura(GrammarParser.NLeituraContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#leitura}.
+	 * Exit a parse tree produced by the {@code NLeitura}
+	 * labeled alternative in {@link GrammarParser#leitura}.
 	 * @param ctx the parse tree
 	 */
-	void exitLeitura(GrammarParser.LeituraContext ctx);
+	void exitNLeitura(GrammarParser.NLeituraContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#bloco_condicional}.
+	 * Enter a parse tree produced by the {@code BlocoCondicional}
+	 * labeled alternative in {@link GrammarParser#bloco_condicional}.
 	 * @param ctx the parse tree
 	 */
-	void enterBloco_condicional(GrammarParser.Bloco_condicionalContext ctx);
+	void enterBlocoCondicional(GrammarParser.BlocoCondicionalContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#bloco_condicional}.
+	 * Exit a parse tree produced by the {@code BlocoCondicional}
+	 * labeled alternative in {@link GrammarParser#bloco_condicional}.
 	 * @param ctx the parse tree
 	 */
-	void exitBloco_condicional(GrammarParser.Bloco_condicionalContext ctx);
+	void exitBlocoCondicional(GrammarParser.BlocoCondicionalContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#bloco_rep}.
+	 * Enter a parse tree produced by the {@code BlocoRepeticao}
+	 * labeled alternative in {@link GrammarParser#bloco_rep}.
 	 * @param ctx the parse tree
 	 */
-	void enterBloco_rep(GrammarParser.Bloco_repContext ctx);
+	void enterBlocoRepeticao(GrammarParser.BlocoRepeticaoContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#bloco_rep}.
+	 * Exit a parse tree produced by the {@code BlocoRepeticao}
+	 * labeled alternative in {@link GrammarParser#bloco_rep}.
 	 * @param ctx the parse tree
 	 */
-	void exitBloco_rep(GrammarParser.Bloco_repContext ctx);
+	void exitBlocoRepeticao(GrammarParser.BlocoRepeticaoContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link GrammarParser#bloco}.
+	 * Enter a parse tree produced by the {@code BlocoPrincipal}
+	 * labeled alternative in {@link GrammarParser#bloco}.
 	 * @param ctx the parse tree
 	 */
-	void enterBloco(GrammarParser.BlocoContext ctx);
+	void enterBlocoPrincipal(GrammarParser.BlocoPrincipalContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link GrammarParser#bloco}.
+	 * Exit a parse tree produced by the {@code BlocoPrincipal}
+	 * labeled alternative in {@link GrammarParser#bloco}.
 	 * @param ctx the parse tree
 	 */
-	void exitBloco(GrammarParser.BlocoContext ctx);
+	void exitBlocoPrincipal(GrammarParser.BlocoPrincipalContext ctx);
 }

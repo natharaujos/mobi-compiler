@@ -15,61 +15,61 @@ public class GrammarBaseListener implements GrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPrograma(GrammarParser.ProgramaContext ctx) { }
+	@Override public void enterNInicio(GrammarParser.NInicioContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPrograma(GrammarParser.ProgramaContext ctx) { }
+	@Override public void exitNInicio(GrammarParser.NInicioContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEstrutura(GrammarParser.EstruturaContext ctx) { }
+	@Override public void enterNEstrutura(GrammarParser.NEstruturaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEstrutura(GrammarParser.EstruturaContext ctx) { }
+	@Override public void exitNEstrutura(GrammarParser.NEstruturaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDeclaracao_funcao(GrammarParser.Declaracao_funcaoContext ctx) { }
+	@Override public void enterNDeclaracaoFuncao(GrammarParser.NDeclaracaoFuncaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDeclaracao_funcao(GrammarParser.Declaracao_funcaoContext ctx) { }
+	@Override public void exitNDeclaracaoFuncao(GrammarParser.NDeclaracaoFuncaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDeclaracao_variavel(GrammarParser.Declaracao_variavelContext ctx) { }
+	@Override public void enterNDeclaracaoVariavel(GrammarParser.NDeclaracaoVariavelContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDeclaracao_variavel(GrammarParser.Declaracao_variavelContext ctx) { }
+	@Override public void exitNDeclaracaoVariavel(GrammarParser.NDeclaracaoVariavelContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParametros(GrammarParser.ParametrosContext ctx) { }
+	@Override public void enterNlocoDeclaracaoParametro(GrammarParser.NlocoDeclaracaoParametroContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParametros(GrammarParser.ParametrosContext ctx) { }
+	@Override public void exitNlocoDeclaracaoParametro(GrammarParser.NlocoDeclaracaoParametroContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -87,169 +87,169 @@ public class GrammarBaseListener implements GrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBloco_expressao(GrammarParser.Bloco_expressaoContext ctx) { }
+	@Override public void enterBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBloco_expressao(GrammarParser.Bloco_expressaoContext ctx) { }
+	@Override public void exitBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpressao(GrammarParser.ExpressaoContext ctx) { }
+	@Override public void enterBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpressao(GrammarParser.ExpressaoContext ctx) { }
+	@Override public void exitBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpressao_igualdade(GrammarParser.Expressao_igualdadeContext ctx) { }
+	@Override public void enterBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpressao_igualdade(GrammarParser.Expressao_igualdadeContext ctx) { }
+	@Override public void exitBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpressao_relacional(GrammarParser.Expressao_relacionalContext ctx) { }
+	@Override public void enterBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpressao_relacional(GrammarParser.Expressao_relacionalContext ctx) { }
+	@Override public void exitBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpressao_soma(GrammarParser.Expressao_somaContext ctx) { }
+	@Override public void enterBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpressao_soma(GrammarParser.Expressao_somaContext ctx) { }
+	@Override public void exitBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpressao_multiplicacao(GrammarParser.Expressao_multiplicacaoContext ctx) { }
+	@Override public void enterBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpressao_multiplicacao(GrammarParser.Expressao_multiplicacaoContext ctx) { }
+	@Override public void exitBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpressao_unaria(GrammarParser.Expressao_unariaContext ctx) { }
+	@Override public void enterBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpressao_unaria(GrammarParser.Expressao_unariaContext ctx) { }
+	@Override public void exitBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpressao_primaria(GrammarParser.Expressao_primariaContext ctx) { }
+	@Override public void enterBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpressao_primaria(GrammarParser.Expressao_primariaContext ctx) { }
+	@Override public void exitBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPrint(GrammarParser.PrintContext ctx) { }
+	@Override public void enterBlocoExpressaoImpressao(GrammarParser.BlocoExpressaoImpressaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPrint(GrammarParser.PrintContext ctx) { }
+	@Override public void exitBlocoExpressaoImpressao(GrammarParser.BlocoExpressaoImpressaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBloco_retorno(GrammarParser.Bloco_retornoContext ctx) { }
+	@Override public void enterBlocoRetorno(GrammarParser.BlocoRetornoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBloco_retorno(GrammarParser.Bloco_retornoContext ctx) { }
+	@Override public void exitBlocoRetorno(GrammarParser.BlocoRetornoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLeitura(GrammarParser.LeituraContext ctx) { }
+	@Override public void enterNLeitura(GrammarParser.NLeituraContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLeitura(GrammarParser.LeituraContext ctx) { }
+	@Override public void exitNLeitura(GrammarParser.NLeituraContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBloco_condicional(GrammarParser.Bloco_condicionalContext ctx) { }
+	@Override public void enterBlocoCondicional(GrammarParser.BlocoCondicionalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBloco_condicional(GrammarParser.Bloco_condicionalContext ctx) { }
+	@Override public void exitBlocoCondicional(GrammarParser.BlocoCondicionalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBloco_rep(GrammarParser.Bloco_repContext ctx) { }
+	@Override public void enterBlocoRepeticao(GrammarParser.BlocoRepeticaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBloco_rep(GrammarParser.Bloco_repContext ctx) { }
+	@Override public void exitBlocoRepeticao(GrammarParser.BlocoRepeticaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBloco(GrammarParser.BlocoContext ctx) { }
+	@Override public void enterBlocoPrincipal(GrammarParser.BlocoPrincipalContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBloco(GrammarParser.BlocoContext ctx) { }
+	@Override public void exitBlocoPrincipal(GrammarParser.BlocoPrincipalContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
