@@ -1,24 +1,19 @@
-import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.Token;
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.tree.ParseTree;
 
 import java.io.IOException;
 
 public class ExemploLexer {
 
     public static void  main (String[] args){
-        String filename = "D:\\ERE5\\novotrabcomp\\TrabalhoPraticoGCC130\\codigo.txt";
+        String filename = "D:\\Projects\\TrabalhoPraticoGCC130\\codigo.txt";
         try{
             CharStream input = CharStreams.fromFileName(filename);
             GrammarLexer lexer = new GrammarLexer(input);
-            Token token;
-            while (!lexer._hitEOF){
-                token = lexer.nextToken();
-                System.out.println("Token: "+ token.toString());
-                System.out.println("    Lexema: "+ token.getText());
-                System.out.println("    Classe: "+lexer.getVocabulary().getDisplayName(token.getType()));
-            }
-
+            CommonTokenStream tokens = new CommonTokenStream(lexer);
+            GrammarParser parser = new GrammarParser(tokens);
+            ParseTree ast = parser.programa();
+            System.out.println(ast.toStringTree());
         } catch (IOException e){
             e.printStackTrace();
         }
