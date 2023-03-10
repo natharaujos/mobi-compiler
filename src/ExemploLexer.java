@@ -15,7 +15,7 @@ public class ExemploLexer {
 
     public static void  main (String[] args){
         //parsing the input
-        GrammarParser parser = getParser("D:\\Projects\\TrabalhoPraticoGCC130\\codigo.txt");
+        GrammarParser parser = getParser("D:\\Projects\\TrabalhoPraticoGCC130\\codigoErrado.txt");
 
         //obter arvore
         ParseTree ast = parser.programa();

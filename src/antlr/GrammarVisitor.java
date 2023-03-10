@@ -54,61 +54,26 @@ public interface GrammarVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitTipo(GrammarParser.TipoContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code BlocoDeclaracaoExpressao}
-	 * labeled alternative in {@link GrammarParser#bloco_expressao}.
+	 * Visit a parse tree produced by the {@code NAtribuicao}
+	 * labeled alternative in {@link GrammarParser#atribuicao}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx);
+	T visitNAtribuicao(GrammarParser.NAtribuicaoContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code BlocoExpressao}
-	 * labeled alternative in {@link GrammarParser#expressao}.
+	 * Visit a parse tree produced by the {@code NComparacao}
+	 * labeled alternative in {@link GrammarParser#comparacao}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx);
+	T visitNComparacao(GrammarParser.NComparacaoContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code BlocoExpressaoIgualdade}
-	 * labeled alternative in {@link GrammarParser#expressao_igualdade}.
+	 * Visit a parse tree produced by the {@code NOperacao}
+	 * labeled alternative in {@link GrammarParser#operacao}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code BlocoExpressaoRelacional}
-	 * labeled alternative in {@link GrammarParser#expressao_relacional}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code BlocoExpressaoSoma}
-	 * labeled alternative in {@link GrammarParser#expressao_soma}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code BlocoExpressaoMultiplicacao}
-	 * labeled alternative in {@link GrammarParser#expressao_multiplicacao}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code BlocoExpressaoUnaria}
-	 * labeled alternative in {@link GrammarParser#expressao_unaria}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code BlocoExpressaoPrimaria}
-	 * labeled alternative in {@link GrammarParser#expressao_primaria}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx);
+	T visitNOperacao(GrammarParser.NOperacaoContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code BlocoExpressaoImpressao}
 	 * labeled alternative in {@link GrammarParser#print}.

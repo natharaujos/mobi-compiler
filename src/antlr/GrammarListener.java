@@ -80,101 +80,41 @@ public interface GrammarListener extends ParseTreeListener {
 	 */
 	void exitTipo(GrammarParser.TipoContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code BlocoDeclaracaoExpressao}
-	 * labeled alternative in {@link GrammarParser#bloco_expressao}.
+	 * Enter a parse tree produced by the {@code NAtribuicao}
+	 * labeled alternative in {@link GrammarParser#atribuicao}.
 	 * @param ctx the parse tree
 	 */
-	void enterBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx);
+	void enterNAtribuicao(GrammarParser.NAtribuicaoContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code BlocoDeclaracaoExpressao}
-	 * labeled alternative in {@link GrammarParser#bloco_expressao}.
+	 * Exit a parse tree produced by the {@code NAtribuicao}
+	 * labeled alternative in {@link GrammarParser#atribuicao}.
 	 * @param ctx the parse tree
 	 */
-	void exitBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx);
+	void exitNAtribuicao(GrammarParser.NAtribuicaoContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code BlocoExpressao}
-	 * labeled alternative in {@link GrammarParser#expressao}.
+	 * Enter a parse tree produced by the {@code NComparacao}
+	 * labeled alternative in {@link GrammarParser#comparacao}.
 	 * @param ctx the parse tree
 	 */
-	void enterBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx);
+	void enterNComparacao(GrammarParser.NComparacaoContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code BlocoExpressao}
-	 * labeled alternative in {@link GrammarParser#expressao}.
+	 * Exit a parse tree produced by the {@code NComparacao}
+	 * labeled alternative in {@link GrammarParser#comparacao}.
 	 * @param ctx the parse tree
 	 */
-	void exitBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx);
+	void exitNComparacao(GrammarParser.NComparacaoContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code BlocoExpressaoIgualdade}
-	 * labeled alternative in {@link GrammarParser#expressao_igualdade}.
+	 * Enter a parse tree produced by the {@code NOperacao}
+	 * labeled alternative in {@link GrammarParser#operacao}.
 	 * @param ctx the parse tree
 	 */
-	void enterBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx);
+	void enterNOperacao(GrammarParser.NOperacaoContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code BlocoExpressaoIgualdade}
-	 * labeled alternative in {@link GrammarParser#expressao_igualdade}.
+	 * Exit a parse tree produced by the {@code NOperacao}
+	 * labeled alternative in {@link GrammarParser#operacao}.
 	 * @param ctx the parse tree
 	 */
-	void exitBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code BlocoExpressaoRelacional}
-	 * labeled alternative in {@link GrammarParser#expressao_relacional}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code BlocoExpressaoRelacional}
-	 * labeled alternative in {@link GrammarParser#expressao_relacional}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code BlocoExpressaoSoma}
-	 * labeled alternative in {@link GrammarParser#expressao_soma}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code BlocoExpressaoSoma}
-	 * labeled alternative in {@link GrammarParser#expressao_soma}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code BlocoExpressaoMultiplicacao}
-	 * labeled alternative in {@link GrammarParser#expressao_multiplicacao}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code BlocoExpressaoMultiplicacao}
-	 * labeled alternative in {@link GrammarParser#expressao_multiplicacao}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code BlocoExpressaoUnaria}
-	 * labeled alternative in {@link GrammarParser#expressao_unaria}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code BlocoExpressaoUnaria}
-	 * labeled alternative in {@link GrammarParser#expressao_unaria}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code BlocoExpressaoPrimaria}
-	 * labeled alternative in {@link GrammarParser#expressao_primaria}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code BlocoExpressaoPrimaria}
-	 * labeled alternative in {@link GrammarParser#expressao_primaria}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx);
+	void exitNOperacao(GrammarParser.NOperacaoContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code BlocoExpressaoImpressao}
 	 * labeled alternative in {@link GrammarParser#print}.

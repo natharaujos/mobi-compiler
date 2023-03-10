@@ -90,97 +90,37 @@ public class GrammarBaseListener implements GrammarListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx) { }
+	@Override public void enterNAtribuicao(GrammarParser.NAtribuicaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlocoDeclaracaoExpressao(GrammarParser.BlocoDeclaracaoExpressaoContext ctx) { }
+	@Override public void exitNAtribuicao(GrammarParser.NAtribuicaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx) { }
+	@Override public void enterNComparacao(GrammarParser.NComparacaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlocoExpressao(GrammarParser.BlocoExpressaoContext ctx) { }
+	@Override public void exitNComparacao(GrammarParser.NComparacaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx) { }
+	@Override public void enterNOperacao(GrammarParser.NOperacaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlocoExpressaoIgualdade(GrammarParser.BlocoExpressaoIgualdadeContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitBlocoExpressaoRelacional(GrammarParser.BlocoExpressaoRelacionalContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitBlocoExpressaoSoma(GrammarParser.BlocoExpressaoSomaContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitBlocoExpressaoMultiplicacao(GrammarParser.BlocoExpressaoMultiplicacaoContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitBlocoExpressaoUnaria(GrammarParser.BlocoExpressaoUnariaContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitBlocoExpressaoPrimaria(GrammarParser.BlocoExpressaoPrimariaContext ctx) { }
+	@Override public void exitNOperacao(GrammarParser.NOperacaoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
